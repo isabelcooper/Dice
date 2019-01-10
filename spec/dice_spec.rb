@@ -40,6 +40,7 @@ describe Dice do
     expect(@result2).to eq [1,3]
   end
 
+# not passing
   it 'should pretty print the results of the roll(s)' do
   #  expect(@dice).to respond_to(:pretty_print)
      expect(@dice.pretty_print(@result)).to eq "You rolled a 3"
