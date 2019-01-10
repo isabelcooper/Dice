@@ -11,10 +11,10 @@ describe Dice do
   end
 
   it 'should output a number on roll' do
-  #arrange, act, assert
     expect(@result).to be_a Fixnum
   end
 
-  it 'should output random number between 1 and 6 on roll' do    
+  it 'should output random number between 1 and 6 on roll' do
+    expect(1..6).to cover(@result)
   end
 end
